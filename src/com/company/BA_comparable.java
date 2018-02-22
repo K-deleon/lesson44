@@ -1,6 +1,8 @@
 package com.company;
 
-public class BA_comparable {
+import java.util.*;
+
+public class BA_comparable implements  Comparator{
     public int compare(Object firstObject, Object secondObject){
         BankAccount ba1 = (BankAccount) firstObject;
         BankAccount ba2 = (BankAccount) secondObject;

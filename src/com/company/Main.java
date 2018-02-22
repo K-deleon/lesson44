@@ -24,9 +24,10 @@ import java.text.*; //for NumberFormat
                 double amount = kbReader.nextDouble( );
                 System.out.println(" "); //gives a blank line between accounts
 
-                Comparable comp = new BA_comparable();
                 ba[j] = new BankAccount(name,amount);
             }
+
+            Comparator comp = new BA_comparable();
 
             Arrays.sort(ba,comp);
             for(j = 0; j <ba.length; j++){
